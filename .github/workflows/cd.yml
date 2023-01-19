@@ -14,6 +14,15 @@ jobs:
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
+      - name: Get the version of package.json
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@main
+      - name: Compare the version of package.json to release tag
+        if: ${{format('v{0}',steps.package-version.outputs.current-version) != github.ref_name}}
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Please check the version of release tag and package.json')
       - name: Install npm dependencies
         run: npm ci
       - name: Build
