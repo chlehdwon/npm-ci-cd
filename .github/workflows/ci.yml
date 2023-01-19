@@ -24,5 +24,9 @@ jobs:
           cache: npm
       - name: Install npm dependencies
         run: npm ci
+      - name: Check Lnt
+        run: npm run lint
+      - name: Check Prettier
+        run: npm run prettier
       - name: Build
         run: npm run build
