@@ -1,0 +1,24 @@
+{
+  "name": "won-npm-ci-cd-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chlehdwon/npm-ci-cd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chlehdwon/npm-ci-cd/issues"
+  },
+  "homepage": "https://github.com/chlehdwon/npm-ci-cd#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
