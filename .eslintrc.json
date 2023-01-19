@@ -6,7 +6,6 @@
   "extends": [
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:prettier/recommended"
   ],
   "overrides": [],
