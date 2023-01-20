@@ -1,6 +1,6 @@
 {
   "name": "won-npm-ci-cd-practice",
-  "version": "1.1.0",
+  "version": "1.1.0b",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
